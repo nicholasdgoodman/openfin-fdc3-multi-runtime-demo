@@ -1,0 +1,10 @@
+<script>
+    fin.Platform.init();
+</script>
+<script type="module">
+    import { patchIab } from './patch-iab.js';
+    import { patchMesh } from './patch-mesh.js';
+
+    const meshDemo = false;
+    meshDemo ? patchMesh() : patchIab();
+</script>
